@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #b6b6b6;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h1, h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#canvas {
+    min-height: 600px;
+    min-width: 1000px;
+    background-color: rgb(139, 138, 138);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#tooltip {
+    position: absolute;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.county:hover {
+    fill: rgb(109, 109, 109);
+    cursor: pointer;
+}
+
+#legend {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 420px;
+    right: 20px;
+    background-color: rgb(139, 138, 138);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 180px;
+    width: 250px;
+    
+}
+
+#legend g {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#legend rect {
+    width: 40px;
+    height: 40px;
+}
+
+#legend text {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
